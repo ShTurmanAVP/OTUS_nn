@@ -1,2 +1,5 @@
 hw1/MNIST_data/
 .ipynb_checkpoints
+hw4/FashionMNIST_data/
+hw4/MNIST_data/
+hw4/__pycache__/
