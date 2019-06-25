@@ -73,6 +73,15 @@ def plot_mnist(images, shape):
         plt.yticks(np.array([]))
     plt.show()
 
+def plot_fashion_mnist(images, shape):
+    fig = plt.figure(figsize=shape[::-1], dpi=80)
+    for j in range(1, len(images) + 1):
+        ax = fig.add_subplot(shape[0], shape[1], j)
+        ax.matshow(images[j - 1][0], cmap=matplotlib.cm.binary)
+        plt.xticks(np.array([]))
+        plt.yticks(np.array([]))
+    plt.show()
+
     
 def plot_graphs(log, tpe='loss'):
     keys = log.keys()
